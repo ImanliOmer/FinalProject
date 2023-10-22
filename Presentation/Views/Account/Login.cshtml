@@ -1,0 +1,90 @@
+﻿<div class="max-w-full xl:max-w-[1800px] mx-auto flex flex-col justify-center items-center">
+    <div class="w-full">
+        <div class="px-[var(--col-mobile)] lg:px-[var(--col)] pt-[48px] pb-[64px] md:py-[108px]">
+            <div class="flex justify-center flex-col md:flex-row">
+                <div class="md:pr-[72px] md:max-w-[504px] md:w-[504px] pb-[48px] md:pb-0">
+                    <div>
+                        <div>
+                            <h2 class="font-bold lg:text-h2 text-black">
+                                Have a Polaroid account?
+                            </h2>
+                        </div>
+                        <div class="mt-5 lg:mt-6">
+                            <p class="text-3xl lg:text-h5 text-black font-sans leading-5 lg:leading-7">
+                                <div>
+                                    <div>
+                                        <p class="font-bold text-lg">Access it now to save time when you shop.</p>
+                                    </div>
+                                </div>
+                            </p>
+                        </div>
+                        <div class="pt-5 lg:pt-7">
+                            <form>
+                                <div class="mt-4 lg:mt-5">
+                                    <div class="pl-4">
+                                        <label class="text-slate-400 text-sm">Email</label>
+                                    </div>
+                                    <div class="mt-2">
+                                        <input id="login-email"
+                                               class="rounded-full border-neutral border-2 w-full h-[48px] px-7 text-black font-sans leading-4"
+                                               placeholder="Email" type="text" name="email" value="">
+                                    </div>
+                                </div>
+                                <div class="mt-4 lg:mt-5">
+                                    <div class="pl-4">
+                                        <label class="text-slate-400 text-sm">Password</label>
+                                    </div>
+                                    <div class="mt-2">
+                                        <input id="login-password"
+                                               class="rounded-full border-2 w-full h-[48px] px-7 text-black font-sans leading-4"
+                                               placeholder="Password" type="password" name="password" value="">
+                                    </div>
+                                </div>
+                                <div class="pt-6">
+                                    <button type="submit"
+                                            class="rounded-[100px] transition-[all] duration-300 ease-out cursor-pointer bg-black text-white border-2 border-black hover:bg-white hover:text-black hover:border-solid py-4 px-7 w-full">
+                                        Sign
+                                        in
+                                    </button>
+                                </div>
+                            </form>
+                            <div class="flex justify-center pt-9">
+                                <a asp-action="forgotpassword" asp-controller="account"
+                                   class="font-bold text-black  pb-[2px]">
+                                    Forgot
+                                    your password?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-[2px] w-auto md:w-[2px] md:h-auto bg-slate-300"></div>
+                <div class="md:max-w-[504px] md:w-[504px] md:pl-[72px] pt-[48px] md:pt-0">
+                    <div>
+                        <h2 class=" md:text-h2 text-black font-bold">Don’t have an account?</h2>
+                    </div>
+                    <div class="mt-5 md:mt-6">
+                        <p class="md:text-h5 text-black font-sans leading-5 md:leading-7">
+                            <div>
+                                <div>
+                                    <p class="font-sans">
+                                        Create your own Polaroid account today. It makes shopping
+                                        smoother and faster, while also earning you reward points on every purchase.
+                                    </p>
+                                    <p class="font-sans"></p>
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                    <div class="mt-9">
+                        <a asp-action="register" asp-controller="account" 
+                           class="inline-flex items-center justify-center bg-black text-white border-2 border-black border-solid font-headings rounded-full text-center h-[48px] px-7 w-full md:w-auto hover:bg-white hover:text-black transition-[all] duration-300 ease-out">
+                            Create
+                            your account
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

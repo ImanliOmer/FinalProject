@@ -1,0 +1,62 @@
+﻿@using Business.ViewModels.Admin.Product
+@model ProductUpdateVM
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+
+    <!-- Page Heading -->
+    <h1 class="h3 mb-2 text-gray-800">Update Product</h1>
+
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-body">
+            <form enctype="multipart/form-data" asp-action="update" asp-controller="product" method="post">
+                <div class="form-group">
+                    <label asp-for="Name"></label>
+                    <input class="form-control" asp-for="Name">
+                    <span asp-validation-for="Name"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Cost"></label>
+                    <input type="number" step=".01" class="form-control" asp-for="Cost">
+                    <span asp-validation-for="Cost"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description"></label>
+                    <input class="form-control" asp-for="Description">
+                    <span asp-validation-for="Description"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="TechnicalSpecifications"></label>
+                    <input class="form-control" asp-for="TechnicalSpecifications">
+                    <span asp-validation-for="TechnicalSpecifications"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="CategoryId"></label>
+                    <select class="form-control form-select" asp-for="CategoryId" asp-items="@(new SelectList(Model.ProductCategories.Where(x=> x.ParentCategoryId != null).ToList(), "Id", "CategoryName"))">
+                        <option value="">-- Choose --</option>
+                    </select>
+                    <span asp-validation-for="CategoryId"></span>
+                </div>
+
+
+                <div class="form-group">
+                    <label class="form-label" asp-for="MainPhoto"></label></br>
+                    <input type="file" class="form-label" asp-for="MainPhoto">
+                    <span asp-validation-for="MainPhoto"></span>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label" asp-for="Photos"></label></br>
+                    <input type="file" multiple class="form-label" asp-for="Photos">
+                    <span asp-validation-for="Photos"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Update</button>
+            </form>
+        </div>
+    </div>
+
+</div>

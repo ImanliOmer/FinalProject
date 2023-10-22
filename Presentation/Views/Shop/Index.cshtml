@@ -1,0 +1,108 @@
+﻿@using Common.Entities;
+@using Microsoft.AspNetCore.Identity
+@using Business.Utilities
+@using Business.ViewModels.User.Product
+@model ProductIndexVM
+
+@{
+    var selectedCategory = Model.ProductCategories; 
+}
+
+<!-- Tabs -->
+<div class="hidden pt-2 justify-center md:flex landscape:flex">
+    @if (Model.ProductCategories != null && Model.ProductCategories.Any())
+    {
+        var parentCategory = Model.ProductCategories.FirstOrDefault();
+
+        if (parentCategory != null && parentCategory.Children != null && parentCategory.Children.Any())
+        {
+            <div class="tab-button cursor-pointer">
+                <div class="py-4 w-[109px] max-w-[109px] min-h-[64px] flex flex-col justify-center items-center h-full hover:bg-white">
+                    <div class="flex justify-center">
+                        <span class="text-body-detail lg:text-h6 font-sans block text-center text-black">
+                            <ul class="flex gap-4">
+                                @foreach (var childCategory in parentCategory.Children)
+                                {
+                                    <li class="w-24">@childCategory.CategoryName</li> 
+                                }
+                            </ul>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+
+</div>
+
+
+
+<!-- products -->
+<div class="">
+    <!-- ------------------------------ -->
+    <div class=" flex justify-center items-center pb-[30px] lg:pb-9 ">
+        <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-4 ">
+            <!-- Your card content here -->
+            @foreach (var product in Model.Products)
+            {
+                <div class="flex my-4">
+                    <div class="gap-x-[var(--col-mobile)] lg:gap-x-[0] px-[var(--col-mobile)] lg:px-[0] max-w-[1440px]">
+                        <div>
+
+                            <div role="button" class="z-1">
+                                <a href="">
+                                    <div>
+                                        <div class="flex flex-col items-center lg:hover:shadow-2xl w-screen max-w-full sm:w-[343px] lg:w-[468px] lg:h-[562px]">
+                                            <div class="relative lg:p-[18px] mb-10 lg:mb-0  w-screen max-w-full sm:w-[343px] lg:w-[468px] lg:h-[562px] my-[18px] lg:my-0 cursor-pointer">
+                                                <div class="relative h-[343px] max-h-[343px] lg:h-[432px] lg:max-h-[432px] m-auto bg-lightSilver">
+                                                    <div class="absolute h-[80%] w-[80%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-[fadeIn_0.2s_ease-in-out] transition z-2">
+                                                        <div class="absolute h-[100%] w-[100%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-[fadeIn_0.2s_ease-in-out] transition opacity-100">
+                                                            <div class="w-full h-full ">
+                                                                <span style="box-sizing: border-box; display: block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: absolute; inset: 0px;">
+                                                                    <div class="sm:h-[200px] md:h-[300px] lg:h-[400px] xl:h-[500px]">
+                                                                        <img src="~/User/assets/images/@product.MainPhoto"
+                                                                             style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; object-fit: cover;">
+                                                                    </div>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="absolute h-[100%] w-[100%] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-[fadeIn_0.2s_ease-in-out] transition opacity-0">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="pt-4 lg:pt-5">
+                                                    <div class="flex justify-between sm:px-10">
+                                                        <div class="flex-1">
+                                                            <p class="text-h6 text-black font-headings max-w-[75%] lg:max-w-[85%]">
+                                                                @product.Name
+                                                            </p>
+                                                        </div>
+                                                        <div class="flex flex-col items-end">
+                                                            <div class="w-max">
+                                                                <span class="font-sans text-h6 text-right text-black">@product.Cost</span>
+                                                            </div>
+                                                            <div class="flex mt-2 justify-end">
+                                                                <button type="button"
+                                                                        class="border py-1 mt-2 hover:lg:bg-black hover:lg:text-white lg:transition-colors lg:ease-in-out lg:duration-300 leading-none px-2 font-sans text-body-sm border-black rounded-full">
+                                                                    Add to cart
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="flex justify-between h-full self-center">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            <!-- ------------- -->
+        </div>
+    </div>
+</div>

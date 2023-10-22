@@ -1,0 +1,43 @@
+﻿@using Business.ViewModels.Admin.Product
+@model ProductListVM
+
+<div class="card shadow mb-4">
+	<div class="card-body">
+		<h1 class="h3 mb-2 text-gray-800">Product</h1>
+		<a class="btn btn-primary m-3" asp-action="create" asp-controller="product">Create</a>
+		<div class="table-responsive">
+			<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+				<thead>
+					<tr>
+						<th>Image</th>
+						<th>Title</th>
+						<th>Created At</th>
+						<th>Modified At</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach (var product in Model.Products)
+					{
+						<tr>
+							<td>
+								@if (product.MainPhoto is not null)
+								{
+									<img class="w-25" src="~/User/assets/images/@product.MainPhoto">
+								}
+							</td>
+							<td>@product.Name</td>
+							<td>@product.CreatedAt.ToString("dd.MM.yyyy HH:mm:ss")</td>
+							<td>@product.ModfiedAt?.ToString("dd.MM.yyyy HH:mm:ss")</td>
+							<td>
+								<a asp-action="update" asp-controller="product" asp-route-id="@product.Id" class="btn btn-primary">Update</a>
+								<a onclick="return DeleteConfirmation()" asp-action="delete" asp-controller="product" asp-route-id="@product.Id" class="btn btn-danger">Delete</a>
+								<a asp-action="details" asp-controller="product" asp-route-id="@product.Id" class="btn btn-info">Details</a>
+							</td>
+						</tr>
+					}
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

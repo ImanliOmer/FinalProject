@@ -1,0 +1,47 @@
+﻿@using Business.ViewModels.Admin.ProductCategory
+@model ProducCategorytListVM
+
+
+<!-- Begin Page Content -->
+<div class="container-fluid">
+	<!-- Page Heading -->
+	<h1 class="h3 mb-2 text-gray-800">Product Category</h1>
+	<a class="btn btn-primary m-3" asp-action="create" asp-controller="productcategory">Create</a>
+	<!-- DataTales Example -->
+	<div class="card shadow mb-4">
+		<div class="card-body">
+			<div class="table-responsive">
+				<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+					<thead>
+						<tr>
+							<th>Img</th>
+							<th>Title</th>
+							<th>Type</th>
+							<th>Created At</th>
+							<th>Modified At</th>
+							<th>Actions</th>
+						</tr>
+					</thead>
+					<tbody>
+						@foreach (var category in Model.ProductCategories)
+						{
+							<tr>
+								<td><img class="w-25" src="~/User/assets/images/@category.Photo"></td>
+								
+								<td>@category.CategoryName</td>
+								<td>@category.ParentCategoryId</td>
+								<td>@category.CreatedAt.ToString("dd.MM.yyyy HH:mm:ss")</td>
+								<td>@category.ModfiedAt?.ToString("dd.MM.yyyy HH:mm:ss")</td>
+								<td>
+									<a asp-action="update" asp-controller="productcategory" asp-route-id="@category.Id" class="btn btn-primary">Update</a>
+									<a onclick="return DeleteConfirmation()" asp-action="delete" asp-controller="productcategory" asp-route-id="@category.Id" class="btn btn-danger">Delete</a>
+								</td>
+							</tr>
+						}
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /.container-fluid -->
