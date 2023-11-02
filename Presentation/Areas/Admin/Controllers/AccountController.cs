@@ -1,6 +1,7 @@
 ﻿using Business.Services.Abstract.Admin;
 using Business.ViewModels.Admin.Account;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace Presentation.Areas.Admin.Controllers
 {
@@ -24,7 +25,7 @@ namespace Presentation.Areas.Admin.Controllers
 		public async Task<IActionResult> Login(AdminAccountLoginVM model)
 		{
 			var isSucceeded = await _accountService.Login(model);
-			if (isSucceeded) return RedirectToAction(nameof(Index), "dashboard");
+			if (isSucceeded) return RedirectToAction(nameof(Microsoft.EntityFrameworkCore.Metadata.Internal.Index), "dashboard");
 			return View(model);
 		}
 

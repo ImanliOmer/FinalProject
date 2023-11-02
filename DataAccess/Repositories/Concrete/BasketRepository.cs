@@ -2,6 +2,7 @@
 using DataAccess.Contexts;
 using DataAccess.Repositories.Abstract;
 using DataAccess.Repositories.Base;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -20,19 +21,19 @@ namespace DataAccess.Repositories.Concrete
             _context = context;
         }
 
-        public async Task<Basket> GetBasketById(User user)
+        public async Task<Basket> GetBasketById(IdentityUser user)
         {
             var basket = await _context.Baskets.Where(b => !b.IsDeleted).FirstOrDefaultAsync(b => b.UserId == user.Id);
             return basket;
         }
 
-        public async Task<Basket> GetBasketWithProductsAsync(User user)
+        public async Task<Basket> GetBasketWithProductsAsync(IdentityUser user)
         {
             var basket = await _context.Baskets.Include(b => b.BasketProducts).ThenInclude(bp => bp.Product).Where(b => !b.IsDeleted).FirstOrDefaultAsync(b => b.UserId == user.Id);
             return basket;
         }
 
-        public async Task<BasketProduct>? GetProductByBasketProductIdAsync(int id, User user)
+        public async Task<BasketProduct>? GetProductByBasketProductIdAsync(int id, IdentityUser user)
         {
             var basketProduct = await _context.BasketProducts.Where(bp => !bp.IsDeleted).FirstOrDefaultAsync(bp => bp.ProductId == id && bp.Basket.UserId == user.Id);
             return basketProduct;

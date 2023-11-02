@@ -1,4 +1,6 @@
 ﻿using Business.Services.Abstract.User;
+using Business.ViewModels.Admin.Slider;
+using Business.ViewModels.User.Basket;
 using Business.ViewModels.User.Product;
 using Common.Entities;
 using DataAccess.Repositories.Abstract;
@@ -10,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Business.Services.Concret.Users
 {
-    public class ShopService :IShopService
+    public class ShopService : IShopService
     {
         private readonly IProductRepository _productRepository;
         private readonly IProductCategoryRepository _productCategoryRepository;

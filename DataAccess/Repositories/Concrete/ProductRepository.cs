@@ -35,6 +35,12 @@ namespace DataAccess.Repositories.Concrete
 			return _context.ProductCategories.Where(p => !p.IsDeleted).ToList();
 		}
 
+        public async Task<Product> GetByIdCustom(int id)
+        {
+            var product = await _context.Products.Where(p => !p.IsDeleted).FirstOrDefaultAsync(p => p.Id == id);
+            return product;
+        }
+
         public async Task<Product> GetByNameAsync(string name)
         {
 			return await _context.Products.Where(p => !p.IsDeleted).FirstOrDefaultAsync(p => p.Name == name);
@@ -46,8 +52,12 @@ namespace DataAccess.Repositories.Concrete
 			return await _context.ProductCategories.Where(p => !p.IsDeleted).FirstOrDefaultAsync(p => p.Id == id);
 		}
 
-		
-		public async Task<List<Product>> GetProductsWithPhotos()
+        public async Task<List<Product>> GetProductsForTheirId(int id)
+        {
+            return await _context.Products.Where(p => p.CategoryId == id).ToListAsync();
+        }
+
+        public async Task<List<Product>> GetProductsWithPhotos()
 		{
 			return await _context.Products.Include(x=> x.Category).Include(x=> x.ProductPhots).Where(x=> !x.IsDeleted).ToListAsync();
 		}

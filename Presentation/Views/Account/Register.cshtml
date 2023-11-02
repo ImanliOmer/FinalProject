@@ -1,10 +1,13 @@
-﻿<div class="max-w-full xl:max-w-[1800px] mx-auto flex flex-col justify-center items-center">
+﻿@using Business.ViewModels.User.Account
+@model AccountRegisterVM
+
+<div class="max-w-full xl:max-w-[1800px] mx-auto flex flex-col justify-center items-center">
     <div class="w-full">
         <div class="px-[var(--col-mobile)] lg:px-[var(--col)] pt-[48px] pb-[64px] md:py-[108px]">
             <div class="flex justify-center flex-col md:flex-row">
                 <div class="md:pr-[72px] md:max-w-[504px] md:w-[504px] pb-[48px] md:pb-0">
                     <div>
-                        <form>
+                        <form asp-action="register" asp-controller="account" method="post">
                             <div>
                                 <h2 class="text-3xl  text-black font-bold">
                                     Create your account
@@ -23,81 +26,88 @@
                                     </div>
                                 </p>
                             </div>
+
+
                             <div class="pt-5 lg:pt-4">
+
+
                                 <div class="mt-4 lg:mt-5">
                                     <div class="pl-4">
-                                        <label class="text-storm font-sans"
-                                               for="register-first-name">First name</label>
+                                        <label asp-for="Username" class="text-storm font-sans"
+                                               >Username</label>
                                     </div>
                                     <div class="mt-2">
-                                        <input id="register-first-name"
+                                        <input asp-for="Username" id="register-first-name"
                                                class="rounded-full border-neutral border-2 w-full h-[48px] px-7 text-black font-sans leading-4 placeholder:text-dovegray"
-                                               placeholder="First name" type="text" name="firstName" value="">
+                                               placeholder="Username" type="text" name="Username" value="">
+                                        <span asp-validation-for="@Model.Username"></span>
                                     </div>
                                 </div>
+                                
                                 <div class="mt-4 lg:mt-5">
                                     <div class="pl-4">
-                                        <label class=" text-storm font-sans"
-                                               for="register-last-name">Last name</label>
+                                        <label asp-for="Email" class=" text-storm font-sans"
+                                               >Email</label>
                                     </div>
                                     <div class="mt-2">
-                                        <input id="register-last-name"
-                                               class="rounded-full border-neutral border-2 w-full h-[48px] px-7 text-black font-sans leading-4 placeholder:text-dovegray"
-                                               placeholder="Last name" type="text" name="lastName" value="">
-                                    </div>
-                                </div>
-                                <div class="mt-4 lg:mt-5">
-                                    <div class="pl-4">
-                                        <label class=" text-storm font-sans"
-                                               for="register-email">Email</label>
-                                    </div>
-                                    <div class="mt-2">
-                                        <input id="register-email"
+                                        <input asp-for="Email" id="register-email"
                                                class="rounded-full border-neutral border-2 w-full h-[48px] px-7 text-black font-sans leading-4 placeholder:text-dovegray"
                                                placeholder="Email" type="text" name="email" value="">
+                                        <span asp-validation-for="@Model.Email"></span>
                                     </div>
                                 </div>
+
                                 <div class="mt-4 lg:mt-5">
                                     <div class="pl-4">
-                                        <label class=" text-storm font-sans"
-                                               for="register-password">Password</label>
+                                        <label asp-for="PhoneNumber" class=" text-storm font-sans">PhoneNumber</label>
                                     </div>
                                     <div class="mt-2">
-                                        <input id="register-password"
+                                        <input asp-for="PhoneNumber" id="register-PhoneNumber"
                                                class="rounded-full border-neutral border-2 w-full h-[48px] px-7 text-black font-sans leading-4 placeholder:text-dovegray"
-                                               placeholder="Password" type="password" name="password" value="">
+                                               placeholder="PhoneNumber" type="text" name="PhoneNumber" value="">
+                                        <span asp-validation-for="@Model.PhoneNumber"></span>
                                     </div>
                                 </div>
-                                <div class="flex items-center pt-7 lg:pt-5">
-                                    <button type="button" role="checkbox"
-                                            style="transform: translateX(-100%); position: absolute; pointer-events: none; opacity: 0; margin: 0px; width: 24px; height: 24px;">
-                                        <p class="text-black font-sans ml-[11px] cursor-pointer leading-[14px]">
-                                            <div>
-                                                <div>
-                                                    <p class="font-sans">
-                                                        I have read and agree to the <a href="" class="underline">
-                                                            <span style="text-decoration: underline;">
-                                                                Privacy
-                                                                Policy
-                                                            </span>
-                                                        </a> and <span style="text-decoration: underline;">
-                                                            <a href="" class="underline">
-                                                                Loyalty
-                                                                Terms &amp; Conditions
-                                                            </a>.
-                                                        </span>
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </p>
+                               
+
+                                <div class="mt-4 lg:mt-5">
+                                    <div class="pl-4">
+                                        <label asp-for="Password" class=" text-storm font-sans"
+                                               >Password</label>
+                                    </div>
+                                    <div class="mt-2">
+                                        <input asp-for="Password" id="register-password"
+                                               class="rounded-full border-neutral border-2 w-full h-[48px] px-7 text-black font-sans leading-4 placeholder:text-dovegray"
+                                               placeholder="Password" type="password" name="password" value="">
+                                        <span asp-validation-for="@Model.Password"></span>
+                                    </div>
                                 </div>
+
+                                <div class="mt-4 lg:mt-5">
+                                    <div  class="pl-4">
+                                        <label asp-for="ConfirmPassword" class=" text-storm font-sans"
+                                               >ConfirmPassword</label>
+                                    </div>
+                                    <div class="mt-2">
+                                        <input asp-for="ConfirmPassword" id="register-password"
+                                               class="rounded-full border-neutral border-2 w-full h-[48px] px-7 text-black font-sans leading-4 placeholder:text-dovegray"
+                                               placeholder="ConfirmPassword" type="password" name="ConfirmPassword" value="">
+
+                                        <span asp-validation-for="@Model.ConfirmPassword"></span>
+                                    </div>
+                                   
+                                </div>
+
+                             
+
                                 <div class="pt-7 flex">
-                                    <button type="submit"
+                                    <button asp-action="register" asp-controller="account" type="submit"
                                             class="font-bold rounded-[100px]  bg-black text-white py-4 px-7 border-2 border-solid border-black/50 w-full">
                                         Create
                                         account
                                     </button>
                                 </div>
+
                                 <div class="flex justify-center pt-7">
                                     <a href=""
                                        class="text-black font-bold animated-underline animated-underline-black pb-[2px]">

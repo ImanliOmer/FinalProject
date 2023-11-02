@@ -11,22 +11,22 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Business.Services.Concret.Users
+namespace Business.Services.Concret.User
 {
     public class BasketService : IBasketService
     {
-        private readonly UserManager<User> _userManager;
+        private readonly UserManager<IdentityUser> _userManager;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IBasketRepository _basketRepository;
-        private readonly IProductRepository _productRepository;
+        private readonly DataAccess.Repositories.Abstract.IProductRepository _productRepository;
         private readonly IBasketProductRepository _basketProductRepository;
         private readonly IWishlistService _wishlistService;
         private readonly IWishlistProductRepository _wishlistProductRepository;
 
-        public BasketService(UserManager<User> userManager,
+        public BasketService(UserManager<IdentityUser> userManager,
                              IUnitOfWork unitOfWork,
                              IBasketRepository basketRepository,
-                             IProductRepository productRepository,
+                             DataAccess.Repositories.Abstract.IProductRepository productRepository,
                              IBasketProductRepository basketProductRepository,
                              IWishlistService wishlistService,
                              IWishlistProductRepository wishlistProductRepository)
@@ -67,7 +67,7 @@ namespace Business.Services.Concret.Users
                     PhotoName = basketProduct.Product.MainPhoto,
                     Title = basketProduct.Product.Name,
                     Price = basketProduct.Product.Cost,
-
+                    
                 };
                 model.Add(basketItem);
             }
@@ -119,11 +119,10 @@ namespace Business.Services.Concret.Users
                 basketProduct.Count++;
                 _basketProductRepository.Update(basketProduct);
             }
-
-            var wishlistProducts = await _wishlistProductRepository.GetWishlistProductsByUser(authUser);
-            var wishlistProduct = wishlistProducts.FirstOrDefault(wp => wp.ProductId == id);
-            wishlistProduct.IsInWishlist = false;
-            _wishlistService.DeleteAsync(user, wishlistProduct.Id);
+            //var wishlistProducts = await _wishlistProductRepository.GetWishlistProductsByUser(authUser);
+            //var wishlistProduct = wishlistProducts.FirstOrDefault(wp => wp.ProductId == id);
+            //wishlistProduct.IsInWishlist = false;
+            //_wishlistService.DeleteAsync(authUser, wishlistProduct.Id);
             await _unitOfWork.CommitAsync();
             return true;
         }
@@ -150,7 +149,7 @@ namespace Business.Services.Concret.Users
                 return false;
             }
 
-
+           
 
             basketProduct.Count++;
 
@@ -207,7 +206,7 @@ namespace Business.Services.Concret.Users
                 return false;
             }
 
-            var product = await _productRepository.GetByIdAsync(basketProduct.ProductId);
+            var product = await _productRepository.GetByIdCustom(basketProduct.ProductId);
             if (product == null)
             {
                 return false;

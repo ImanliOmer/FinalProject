@@ -55,16 +55,24 @@ namespace Business.Services.Concret.Users
 			{
 				UserName = model.Username,
 				Email = model.Email,
+				
 				PhoneNumber = model.PhoneNumber,
+				
 			};
 
 			var password = isPassword(model.Password);
 			
+
 			if (!password)
 			{
-				_modelState.AddModelError(string.Empty, "Password must contain Minimum eight characters, at least one letter, one number and one special character");
+				_modelState.AddModelError("Password", "Password must contain Minimum eight characters, at least one letter, one number and one special character");
 			
 				return false;
+			}
+
+			if (model.Password != model.ConfirmPassword)
+			{
+				_modelState.AddModelError("ConfirmPassword", "Confirme Password is not same pasword ");
 			}
 
 			var result = await _userManager.CreateAsync(user, model.Password);
@@ -101,13 +109,13 @@ namespace Business.Services.Concret.Users
 			
 			if (user is null)
 			{
-				_modelState.AddModelError(string.Empty, "Username or password is incorrect");
+				_modelState.AddModelError("Username", "Username or password is incorrect");
 				
 				return false;
 			}
 			if (!user.EmailConfirmed)
 			{
-				_modelState.AddModelError(string.Empty, "Email address must be confirmed to Login");
+				_modelState.AddModelError("Email", "Email address must be confirmed to Login");
 				
 				return false;
 			}

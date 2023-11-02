@@ -30,15 +30,12 @@ namespace Business.Services.Concret.Admin
                                     IUnitOfWork unitOfWork,
                                    INavigationCardRepository navigationCardRepository)
         {
-
             _fileService = fileService;
             _unitOfWork = unitOfWork;
             _navigationCardRepository = navigationCardRepository;
             _modelState = contextAccessor.ActionContext.ModelState;
 
         }
-
-
 
 
         public async Task<bool> CreateAsync(NavigationCardCreateVM model)
@@ -51,7 +48,14 @@ namespace Business.Services.Concret.Admin
                 return false;
             }
 
-            if (_fileService.IsBiggerThanSize(model.Image, 200))
+			var nvc = await _navigationCardRepository.GetByNameAsync(model.Title);
+			if (nvc is not null)
+			{
+				_modelState.AddModelError("Title", "Title under this name already exists in database");
+				return false;
+			}
+
+			if (_fileService.IsBiggerThanSize(model.Image, 200))
             {
                 _modelState.AddModelError("Photo", "File size is over 200kb");
                 return false;
@@ -75,7 +79,7 @@ namespace Business.Services.Concret.Admin
             var navcard = await _navigationCardRepository.GetByIdAsync(id);
             if (navcard is null)
             {
-                _modelState.AddModelError("Title", "Vision Goal doesn't exist");
+                _modelState.AddModelError("Title", "Title doesn't exist");
                 return false;
             }
 
@@ -113,10 +117,14 @@ namespace Business.Services.Concret.Admin
         {
             if (!_modelState.IsValid) return false;
 
+
             var navcard = await _navigationCardRepository.GetByIdAsync(id);
+            if (navcard is null) return false;
+
+           
             if (navcard is null)
             {
-                _modelState.AddModelError("Title", "Department doesn't exist");
+                _modelState.AddModelError("Title", "Title doesn't exist");
                 return false;
             }
 

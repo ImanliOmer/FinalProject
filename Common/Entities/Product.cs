@@ -1,4 +1,5 @@
 ﻿using Common.Entities.Base;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -18,20 +19,20 @@ namespace Common.Entities
         [MaxLength(300)]
         public string Name { get; set; }
 
-		[MaxLength(500)]
+		[MaxLength(1000)]
 		public string Description { get; set; }
 
-		[MaxLength(500)]
+		[MaxLength(1000)]
         public string TechnicalSpecifications { get; set; }
 
         public int CategoryId { get; set; }
 
 		public ProductCategory Category { get; set; }
-        public string MainPhoto { get; set; }
+        public string? MainPhoto { get; set; }
 
         public bool IsMain { get; set; }
 
-        public ICollection<ProductPhot> ProductPhots { get; set; }
+        public ICollection<Common.Entities.ProductPhot>? ProductPhots { get; set; }
         public decimal Cost { get; set; }
 
         public decimal DiscountPrice { get; set; }

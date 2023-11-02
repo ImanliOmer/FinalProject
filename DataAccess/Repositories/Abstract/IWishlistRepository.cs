@@ -1,5 +1,6 @@
 ﻿using Common.Entities;
 using DataAccess.Repositories.Base;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace DataAccess.Repositories.Abstract
 {
     public interface IWishlistRepository : IRepository<Wishlist>
     {
-        Task<Wishlist> GetWishlistWithProductsAsync(User user);
-        Task<Wishlist> GetWishlistById(User user);
+        Task<Wishlist> GetWishlistWithProductsAsync(IdentityUser user);
+        Task<Wishlist> GetWishlistById(IdentityUser user);
     }
 }

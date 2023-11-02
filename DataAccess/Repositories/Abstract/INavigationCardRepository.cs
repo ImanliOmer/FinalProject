@@ -10,5 +10,7 @@ namespace DataAccess.Repositories.Abstract
 {
     public interface INavigationCardRepository: IRepository<NavigationCard>
     {
-    }
+		Task<NavigationCard> GetByNameAsync(string name);
+
+	}
 }

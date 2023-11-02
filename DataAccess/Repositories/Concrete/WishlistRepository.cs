@@ -2,6 +2,7 @@
 using DataAccess.Contexts;
 using DataAccess.Repositories.Abstract;
 using DataAccess.Repositories.Base;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -20,13 +21,13 @@ namespace DataAccess.Repositories.Concrete
             _context = context;
         }
 
-        public Task<Wishlist> GetWishlistById(User user)
+        public Task<Wishlist> GetWishlistById(IdentityUser user)
         {
             var wishlist = _context.Wishlists.Where(w => !w.IsDeleted).FirstOrDefaultAsync(w => w.UserId == user.Id);
             return wishlist;
         }
 
-        public async Task<Wishlist> GetWishlistWithProductsAsync(User user)
+        public async Task<Wishlist> GetWishlistWithProductsAsync(IdentityUser user)
         {
             var wishlist = await _context.Wishlists.Include(w => w.WishlistProducts).ThenInclude(wp => wp.Product).Where(w => !w.IsDeleted).FirstOrDefaultAsync(w => w.UserId == user.Id);
             return wishlist;

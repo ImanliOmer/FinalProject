@@ -1,0 +1,43 @@
+﻿@using Business.ViewModels.Admin.NavigationCardVM
+@model NavigationCardListVM
+
+<div class="card shadow mb-4">
+	<div class="card-body">
+		<h1 class="h3 mb-2 text-gray-800">NavigationCard</h1>
+		<a class="btn btn-primary m-3" asp-action="create" asp-controller="navigationcard">Create</a>
+		<div class="table-responsive">
+			<table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+				<thead>
+					<tr>
+						<th>Image</th>
+						<th>Title</th>
+						<th>Created At</th>
+						<th>Modified At</th>
+						<th>Actions</th>
+					</tr>
+				</thead>
+				<tbody>
+					@foreach (var nvc in Model.NavigationCard)
+					{
+						<tr>
+							<td>
+								@if (nvc.PhotoName is not null)
+								{
+									<img class="w-25" src="~/User/assets/images/@nvc.PhotoName">
+								}
+							</td>
+							<td>@nvc.Title</td>
+
+							<td>@nvc.CreatedAt.ToString("dd.MM.yyyy HH:mm:ss")</td>
+							<td>@nvc.ModfiedAt?.ToString("dd.MM.yyyy HH:mm:ss")</td>
+							<td>
+								<a asp-action="update" asp-controller="navigationcard" asp-route-id="@nvc.Id" class="btn btn-primary">Update</a>
+								<a onclick="return DeleteConfirmation()" asp-action="delete" asp-controller="navigationcard" asp-route-id="@nvc.Id" class="btn btn-danger">Delete</a>
+							</td>
+						</tr>
+					}
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

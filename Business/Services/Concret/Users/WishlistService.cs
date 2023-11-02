@@ -11,17 +11,17 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Business.Services.Concret.Users
+namespace Business.Services.Concret.User
 {
     public class WishlistService : IWishlistService
     {
-        private readonly UserManager<User> _userManager;
+        private readonly UserManager<IdentityUser> _userManager;
         private readonly IUnitOfWork _unitOfWork;
         private readonly DataAccess.Repositories.Abstract.IProductRepository _productRepository;
         private readonly IWishlistRepository _wishlistRepository;
         private readonly IWishlistProductRepository _wishlistProductRepository;
 
-        public WishlistService(UserManager<User> userManager,
+        public WishlistService(UserManager<IdentityUser> userManager,
                                IUnitOfWork unitOfWork,
                                DataAccess.Repositories.Abstract.IProductRepository productRepository,
                                IWishlistRepository wishlistRepository,
@@ -114,16 +114,16 @@ namespace Business.Services.Concret.Users
                 await _wishlistProductRepository.CreateAsync(wishlistProduct);
             }
 
-            else if (wishlistProduct.IsDeleted)
-            {
-                wishlistProduct.IsDeleted = false;
-                wishlistProduct.Count = 1;
-            }
-            else
-            {
-                wishlistProduct.Count++;
-                _wishlistProductRepository.Update(wishlistProduct);
-            }
+            //else if (wishlistProduct.IsDeleted)
+            //{
+            //    wishlistProduct.IsDeleted = false;
+            //    wishlistProduct.Count = 1;
+            //}
+            //else
+            //{
+            //    wishlistProduct.Count++;
+            //    _wishlistProductRepository.Update(wishlistProduct);
+            //}
 
             await _unitOfWork.CommitAsync();
             return true;

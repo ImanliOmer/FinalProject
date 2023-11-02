@@ -1,39 +1,15 @@
-﻿@using Common.Entities;
+﻿﻿@using Common.Entities;
 @using Microsoft.AspNetCore.Identity
 @using Business.Utilities
 @using Business.ViewModels.User.Product
 @model ProductIndexVM
 
 @{
-    var selectedCategory = Model.ProductCategories; 
+    var selectedCategory = Model.ProductCategories;
 }
 
 <!-- Tabs -->
-<div class="hidden pt-2 justify-center md:flex landscape:flex">
-    @if (Model.ProductCategories != null && Model.ProductCategories.Any())
-    {
-        var parentCategory = Model.ProductCategories.FirstOrDefault();
 
-        if (parentCategory != null && parentCategory.Children != null && parentCategory.Children.Any())
-        {
-            <div class="tab-button cursor-pointer">
-                <div class="py-4 w-[109px] max-w-[109px] min-h-[64px] flex flex-col justify-center items-center h-full hover:bg-white">
-                    <div class="flex justify-center">
-                        <span class="text-body-detail lg:text-h6 font-sans block text-center text-black">
-                            <ul class="flex gap-4">
-                                @foreach (var childCategory in parentCategory.Children)
-                                {
-                                    <li class="w-24">@childCategory.CategoryName</li> 
-                                }
-                            </ul>
-                        </span>
-                    </div>
-                </div>
-            </div>
-        }
-    }
-
-</div>
 
 
 
@@ -50,7 +26,7 @@
                         <div>
 
                             <div role="button" class="z-1">
-                                <a href="">
+                                <a asp-action="details" asp-controller="shop" asp-route-id="@product.Id">
                                     <div>
                                         <div class="flex flex-col items-center lg:hover:shadow-2xl w-screen max-w-full sm:w-[343px] lg:w-[468px] lg:h-[562px]">
                                             <div class="relative lg:p-[18px] mb-10 lg:mb-0  w-screen max-w-full sm:w-[343px] lg:w-[468px] lg:h-[562px] my-[18px] lg:my-0 cursor-pointer">
@@ -83,8 +59,8 @@
                                                                 <span class="font-sans text-h6 text-right text-black">@product.Cost</span>
                                                             </div>
                                                             <div class="flex mt-2 justify-end">
-                                                                <button type="button"
-                                                                        class="border py-1 mt-2 hover:lg:bg-black hover:lg:text-white lg:transition-colors lg:ease-in-out lg:duration-300 leading-none px-2 font-sans text-body-sm border-black rounded-full">
+                                                                <button id="addToCart" data-id="@product.Id type="button"
+                                                                        class="border addToCart py-1 mt-2 hover:lg:bg-black hover:lg:text-white lg:transition-colors lg:ease-in-out lg:duration-300 leading-none px-2 font-sans text-body-sm border-black rounded-full">
                                                                     Add to cart
                                                                 </button>
                                                             </div>

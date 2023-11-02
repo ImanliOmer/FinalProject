@@ -8,6 +8,7 @@ using DataAccess.UnitOfWork;
 using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore;
+using Org.BouncyCastle.Math.EC.Rfc7748;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -140,6 +141,8 @@ namespace Business.Services.Concret.Admin
 				_modelState.AddModelError("Title", "Vision doesn't exist");
 				return null;
 			}
+			
+			
 
 			var model = new ProductCategoryUpdateVM
 			{
@@ -156,11 +159,16 @@ namespace Business.Services.Concret.Admin
 			if (!_modelState.IsValid) return false;
 
 			var category = await _categoryRepository.GetById(id);
+
+
+			
+
 			if (model.ParentId == category.Id)
 			{
 				_modelState.AddModelError("ParenId", "Chose another category");
 				return false;
 			}
+
 			if (category is null)
 			{
 				_modelState.AddModelError("Title", "Vision doesn't exist");

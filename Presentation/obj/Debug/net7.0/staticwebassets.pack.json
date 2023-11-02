@@ -7845,6 +7845,22 @@
       "PackagePath": "staticwebassets\\Admin\\vendor\\jquery\\jquery.slim.min.map"
     },
     {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\Scripts\\Basket.js",
+      "PackagePath": "staticwebassets\\User\\assets\\Scripts\\Basket.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\Scripts\\Cart.js",
+      "PackagePath": "staticwebassets\\User\\assets\\Scripts\\Cart.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\Scripts\\Script.js",
+      "PackagePath": "staticwebassets\\User\\assets\\Scripts\\Script.js"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\Scripts\\product.js",
+      "PackagePath": "staticwebassets\\User\\assets\\Scripts\\product.js"
+    },
+    {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\0057b607-1af8-477d-9eca-bd91caee54d7_d7430a9b8fa45ddf708d8eb7c813a188a71dbdbd-420x420.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\0057b607-1af8-477d-9eca-bd91caee54d7_d7430a9b8fa45ddf708d8eb7c813a188a71dbdbd-420x420.png"
     },
@@ -7855,6 +7871,14 @@
     {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\0470eef2-6bb3-4ed2-b920-ce3c4e972357_02535c3eae70b72b05422c9d26944a9724b1c943-420x420.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\0470eef2-6bb3-4ed2-b920-ce3c4e972357_02535c3eae70b72b05422c9d26944a9724b1c943-420x420.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\05232d95-7a73-4bc7-a9f0-2be96624ebc3_d1c821b79a5c2398815a43d54a106e86bd01a071-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\05232d95-7a73-4bc7-a9f0-2be96624ebc3_d1c821b79a5c2398815a43d54a106e86bd01a071-2048x2048.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\0861cfbb-c647-4777-9edd-fef754be1b2b_36c283dec1f3fa499269cf7dc259f57fd2e0b0f5-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\0861cfbb-c647-4777-9edd-fef754be1b2b_36c283dec1f3fa499269cf7dc259f57fd2e0b0f5-2048x2048.png"
     },
     {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\0a32ee69-450e-48f7-9e5a-a43c2c6352f6_Screenshot 2023-05-31 182955.png",
@@ -7877,6 +7901,18 @@
       "PackagePath": "staticwebassets\\User\\assets\\images\\13c1639d-ba40-4893-b640-7b48d3118339_2c3f20fef00a8fe6feac061a87425da91ae00c4d-420x420.png"
     },
     {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\144ad667-c489-41d5-9b94-173099440cbd_c914aa62a768583cdee9278c3532f00644ba90ce-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\144ad667-c489-41d5-9b94-173099440cbd_c914aa62a768583cdee9278c3532f00644ba90ce-2048x2048.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\17be2a38-7a3d-48a7-aa0b-94dc9c005be3_6ddb170adbc06e617cf55e3059461e07a4beada0-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\17be2a38-7a3d-48a7-aa0b-94dc9c005be3_6ddb170adbc06e617cf55e3059461e07a4beada0-2048x2048.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\1b18ee61-60e1-404c-8587-092c195a2285_b82474dc59cac428dc6049a3208179f923b21b8c-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\1b18ee61-60e1-404c-8587-092c195a2285_b82474dc59cac428dc6049a3208179f923b21b8c-2048x2048.png"
+    },
+    {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\1e5f9e45-864a-42d3-837b-88f81c5e6133_Screenshot 2023-05-31 190754.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\1e5f9e45-864a-42d3-837b-88f81c5e6133_Screenshot 2023-05-31 190754.png"
     },
@@ -7897,10 +7933,6 @@
       "PackagePath": "staticwebassets\\User\\assets\\images\\25454da5-78ce-4f79-93f4-399e284848d8_02535c3eae70b72b05422c9d26944a9724b1c943-420x420.png"
     },
     {
-      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\264c4713-06e3-4dc1-8ef6-16a26c248685_91bcdffbcab2b54d6f991ee5411cefca040f441e-420x420.png",
-      "PackagePath": "staticwebassets\\User\\assets\\images\\264c4713-06e3-4dc1-8ef6-16a26c248685_91bcdffbcab2b54d6f991ee5411cefca040f441e-420x420.png"
-    },
-    {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\28cd9f11-3c49-4426-ac49-3bcfd14e31ca_Screenshot 2023-05-16 021100.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\28cd9f11-3c49-4426-ac49-3bcfd14e31ca_Screenshot 2023-05-16 021100.png"
     },
@@ -7913,6 +7945,10 @@
       "PackagePath": "staticwebassets\\User\\assets\\images\\2d787131-5ab7-4387-b651-c9c6dd37361c_a569df677f6c016051db5185471001dd95693081-420x420.png"
     },
     {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\2f2ba3f0-5f51-477f-b1c0-f078d557043e_f380c1275055463c639b1390a7b0a0124f83fc15-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\2f2ba3f0-5f51-477f-b1c0-f078d557043e_f380c1275055463c639b1390a7b0a0124f83fc15-2048x2048.png"
+    },
+    {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\30d93490-05b6-463a-96ac-cec175f55450_d6d1bd2e047bda4745dcea7ce095d4e25448780f-420x420.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\30d93490-05b6-463a-96ac-cec175f55450_d6d1bd2e047bda4745dcea7ce095d4e25448780f-420x420.png"
     },
@@ -7921,12 +7957,32 @@
       "PackagePath": "staticwebassets\\User\\assets\\images\\32755570-4d2c-46de-9ef9-413ec11e3db5_f1cb1805afd1664e9366d3062705a8fcaabc071b-210x210.png"
     },
     {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\33c542fd-78f2-4d5e-b8a3-82a978c54af8_a9ff41a7ad2542f995a5af7c5b56304c91edfa46-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\33c542fd-78f2-4d5e-b8a3-82a978c54af8_a9ff41a7ad2542f995a5af7c5b56304c91edfa46-2048x2048.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\3612cf44-0d99-4fe6-a3a8-99cd5cc18e4e_291e0064419f908adc72c7502d6f285a6d75fb0a-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\3612cf44-0d99-4fe6-a3a8-99cd5cc18e4e_291e0064419f908adc72c7502d6f285a6d75fb0a-2048x2048.png"
+    },
+    {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\395a7420-c9b8-4379-a0c1-b24535fa4fdb_Screenshot 2023-07-06 021201.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\395a7420-c9b8-4379-a0c1-b24535fa4fdb_Screenshot 2023-07-06 021201.png"
     },
     {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\39ed286b-9f2a-46d4-9c9b-7bf026836814_b48d7c9f967af7f06ef2466267a5d5928d9fa550-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\39ed286b-9f2a-46d4-9c9b-7bf026836814_b48d7c9f967af7f06ef2466267a5d5928d9fa550-2048x2048.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\3a3c5eba-083f-47ed-81ed-564c79b421cb_dc662972f0fbb168c2047296a88ed01e9914b5a0-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\3a3c5eba-083f-47ed-81ed-564c79b421cb_dc662972f0fbb168c2047296a88ed01e9914b5a0-2048x2048.png"
+    },
+    {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\3b31acb5-2331-4fba-9369-fefc6fdb935b_Screenshot 2023-05-16 021100.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\3b31acb5-2331-4fba-9369-fefc6fdb935b_Screenshot 2023-05-16 021100.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\3d5c3853-db3e-4ee9-bfd5-cd51ae2c29f2_6ddb170adbc06e617cf55e3059461e07a4beada0-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\3d5c3853-db3e-4ee9-bfd5-cd51ae2c29f2_6ddb170adbc06e617cf55e3059461e07a4beada0-2048x2048.png"
     },
     {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\3dfc712c-9241-43ea-95dd-7203d228f8a0_Screenshot 2023-05-31 190754.png",
@@ -7941,6 +7997,18 @@
       "PackagePath": "staticwebassets\\User\\assets\\images\\3e471b83-e53d-4363-b6aa-a5f2a2facda5_2baaf2c6d3106a37c351fa1860f419627a6bc06b-560x560.png"
     },
     {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\433d12c5-7ea0-4f2e-85fc-17654f06be03_e1ca600145d2ee19b37e3eb85d03be1cedddb56d-2048x2048 (1).png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\433d12c5-7ea0-4f2e-85fc-17654f06be03_e1ca600145d2ee19b37e3eb85d03be1cedddb56d-2048x2048 (1).png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\43729cbe-6ca2-46f4-9615-40b8e251241d_b48d7c9f967af7f06ef2466267a5d5928d9fa550-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\43729cbe-6ca2-46f4-9615-40b8e251241d_b48d7c9f967af7f06ef2466267a5d5928d9fa550-2048x2048.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\4414d077-9883-42e2-b07a-1f7742cebcc1_b82474dc59cac428dc6049a3208179f923b21b8c-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\4414d077-9883-42e2-b07a-1f7742cebcc1_b82474dc59cac428dc6049a3208179f923b21b8c-2048x2048.png"
+    },
+    {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\44329dd6-ccd2-4502-9e04-bdb6a6c6c82f_Screenshot 2023-05-16 021100.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\44329dd6-ccd2-4502-9e04-bdb6a6c6c82f_Screenshot 2023-05-16 021100.png"
     },
@@ -7951,6 +8019,10 @@
     {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\45e4a7df-b696-47a4-b239-eb58dba43f6f_d6d1bd2e047bda4745dcea7ce095d4e25448780f-420x420.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\45e4a7df-b696-47a4-b239-eb58dba43f6f_d6d1bd2e047bda4745dcea7ce095d4e25448780f-420x420.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\47aa3492-de31-4784-8ccf-f520890b50af_6c8436a7e229a9b5c82e7acc9262a4e5276b772d-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\47aa3492-de31-4784-8ccf-f520890b50af_6c8436a7e229a9b5c82e7acc9262a4e5276b772d-2048x2048.png"
     },
     {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\490847e3-930c-451f-bba7-6bb628bdf42b_Screenshot 2023-05-31 190754.png",
@@ -7973,6 +8045,14 @@
       "PackagePath": "staticwebassets\\User\\assets\\images\\543c4ee1-b67e-4dc6-ab41-b36a0777237c_Screenshot 2023-05-16 021100.png"
     },
     {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\57004fda-ec44-407a-93e8-9a2f27c37774_a9b06c4ae7d4dccd51c976c850824927ce1e88cd-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\57004fda-ec44-407a-93e8-9a2f27c37774_a9b06c4ae7d4dccd51c976c850824927ce1e88cd-2048x2048.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\575922a3-fe0e-45a1-b9df-00360d1c5526_65c83ccc8bea54ca6dc5af64f77d3ebea5719598-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\575922a3-fe0e-45a1-b9df-00360d1c5526_65c83ccc8bea54ca6dc5af64f77d3ebea5719598-2048x2048.png"
+    },
+    {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\5813fd4d-1a8f-4a54-a298-156a242201e5_90558806d9bd1857dd64aa7d99f6bc6bca949740-420x420.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\5813fd4d-1a8f-4a54-a298-156a242201e5_90558806d9bd1857dd64aa7d99f6bc6bca949740-420x420.png"
     },
@@ -7981,20 +8061,28 @@
       "PackagePath": "staticwebassets\\User\\assets\\images\\594c6158-ab7a-4755-88f5-2a6b89595fc1_777449f34f522b8ee07c639e8740feb8f86e4aad-420x420.png"
     },
     {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\598336db-97b8-4a61-841a-b90ef21a0ebb_b5dc83f796aec5b4db66c1a0ef299f67efc26777-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\598336db-97b8-4a61-841a-b90ef21a0ebb_b5dc83f796aec5b4db66c1a0ef299f67efc26777-2048x2048.png"
+    },
+    {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\5a22bb19-3471-450b-acc8-0a6b428aeea6_Screenshot 2023-05-31 190754.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\5a22bb19-3471-450b-acc8-0a6b428aeea6_Screenshot 2023-05-31 190754.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\5a24790a-13c8-4658-bb40-74e782e0d70f_6c8436a7e229a9b5c82e7acc9262a4e5276b772d-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\5a24790a-13c8-4658-bb40-74e782e0d70f_6c8436a7e229a9b5c82e7acc9262a4e5276b772d-2048x2048.png"
     },
     {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\5de84362-13ed-4011-a123-ffcc7a276aa0_0a9b5e25ca2868c598574c6273ebef3392172f89-210x210.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\5de84362-13ed-4011-a123-ffcc7a276aa0_0a9b5e25ca2868c598574c6273ebef3392172f89-210x210.png"
     },
     {
-      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\5e6225da-8494-4560-9ed9-1318bcea6170_ef9c36ed4b55a06249f69863364e3ca42d6d5fc5-420x420.png",
-      "PackagePath": "staticwebassets\\User\\assets\\images\\5e6225da-8494-4560-9ed9-1318bcea6170_ef9c36ed4b55a06249f69863364e3ca42d6d5fc5-420x420.png"
-    },
-    {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\62802f17-96dc-442c-a0ba-8e6fec43d9b1_Screenshot 2023-07-06 021201.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\62802f17-96dc-442c-a0ba-8e6fec43d9b1_Screenshot 2023-07-06 021201.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\63789f0b-3dc6-47ed-a8a1-7fc4004fe3d0_6ddb170adbc06e617cf55e3059461e07a4beada0-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\63789f0b-3dc6-47ed-a8a1-7fc4004fe3d0_6ddb170adbc06e617cf55e3059461e07a4beada0-2048x2048.png"
     },
     {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\652f2088-02e5-4b5f-94c4-d0c12c3f0148_2c3f20fef00a8fe6feac061a87425da91ae00c4d-420x420.png",
@@ -8009,8 +8097,32 @@
       "PackagePath": "staticwebassets\\User\\assets\\images\\689fa735-76e9-42bc-a301-adafd1aa81dc_Screenshot 2023-03-23 031359.png"
     },
     {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\6c256dca-d0f1-4dc0-8031-9cdd6c9d96cc_bd6c03240f48f2efba529c3bf785e4ba027a9287-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\6c256dca-d0f1-4dc0-8031-9cdd6c9d96cc_bd6c03240f48f2efba529c3bf785e4ba027a9287-2048x2048.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\6d5c197f-d921-429c-8a36-ceb4f00737cc_a9ff41a7ad2542f995a5af7c5b56304c91edfa46-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\6d5c197f-d921-429c-8a36-ceb4f00737cc_a9ff41a7ad2542f995a5af7c5b56304c91edfa46-2048x2048.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\6f7e9781-7259-46c4-8a2a-b0d3f6540379_ea3ee045172012648a4968fe70c42bb61d824ec7-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\6f7e9781-7259-46c4-8a2a-b0d3f6540379_ea3ee045172012648a4968fe70c42bb61d824ec7-2048x2048.png"
+    },
+    {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\70c010f7-f524-4a0a-96d2-8b5f8b3f88f2_Screenshot 2023-05-16 021100.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\70c010f7-f524-4a0a-96d2-8b5f8b3f88f2_Screenshot 2023-05-16 021100.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\72bab525-5169-4025-90dc-0dcc0874493c_80205ec8e3368872d62f6eadf529de48c210d1ef-864x1120.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\72bab525-5169-4025-90dc-0dcc0874493c_80205ec8e3368872d62f6eadf529de48c210d1ef-864x1120.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\72df31cc-a5f1-4555-93e4-1660b4b4eaf2_dc662972f0fbb168c2047296a88ed01e9914b5a0-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\72df31cc-a5f1-4555-93e4-1660b4b4eaf2_dc662972f0fbb168c2047296a88ed01e9914b5a0-2048x2048.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\735b1483-c5f5-497b-ae48-9b61e050a5a3_291e0064419f908adc72c7502d6f285a6d75fb0a-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\735b1483-c5f5-497b-ae48-9b61e050a5a3_291e0064419f908adc72c7502d6f285a6d75fb0a-2048x2048.png"
     },
     {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\7538715d-07e0-4974-beee-3035ee999a25_Screenshot 2023-05-31 190754.png",
@@ -8041,6 +8153,10 @@
       "PackagePath": "staticwebassets\\User\\assets\\images\\7dc9ab25-b45d-44fb-ac25-fefe26cbaa18_Screenshot 2023-05-31 182955 - Copy.png"
     },
     {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\7f9cfe61-6aff-4cf3-b0ce-4f3de878f2fe_d1c821b79a5c2398815a43d54a106e86bd01a071-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\7f9cfe61-6aff-4cf3-b0ce-4f3de878f2fe_d1c821b79a5c2398815a43d54a106e86bd01a071-2048x2048.png"
+    },
+    {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\7fdf2d07-6929-43f8-ac0e-82b20d63cf88_a6750ccb52b5299f97478a8086c6189de5f1f607-420x420.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\7fdf2d07-6929-43f8-ac0e-82b20d63cf88_a6750ccb52b5299f97478a8086c6189de5f1f607-420x420.png"
     },
@@ -8053,6 +8169,10 @@
       "PackagePath": "staticwebassets\\User\\assets\\images\\84485530-978a-48b0-9721-5e467c4b1d52_777449f34f522b8ee07c639e8740feb8f86e4aad-420x420.png"
     },
     {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\85e6cdb7-1b2d-45e1-8a20-830565ad5c35_b5dc83f796aec5b4db66c1a0ef299f67efc26777-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\85e6cdb7-1b2d-45e1-8a20-830565ad5c35_b5dc83f796aec5b4db66c1a0ef299f67efc26777-2048x2048.png"
+    },
+    {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\89112aa8-ff4c-474f-b298-622ea0a28723_d6d1bd2e047bda4745dcea7ce095d4e25448780f-420x420.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\89112aa8-ff4c-474f-b298-622ea0a28723_d6d1bd2e047bda4745dcea7ce095d4e25448780f-420x420.png"
     },
@@ -8061,12 +8181,24 @@
       "PackagePath": "staticwebassets\\User\\assets\\images\\8b5dba9f-c066-40d5-a30d-c5925d059839_2c3f20fef00a8fe6feac061a87425da91ae00c4d-420x420.png"
     },
     {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\8bc6753f-8553-4e36-a815-26d450e508ad_f380c1275055463c639b1390a7b0a0124f83fc15-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\8bc6753f-8553-4e36-a815-26d450e508ad_f380c1275055463c639b1390a7b0a0124f83fc15-2048x2048.png"
+    },
+    {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\8c1fb0ee-c7a6-4428-a6b1-0c348ce970bc_Screenshot 2023-05-16 021100.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\8c1fb0ee-c7a6-4428-a6b1-0c348ce970bc_Screenshot 2023-05-16 021100.png"
     },
     {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\8d1a5165-e4a0-4bd0-be13-9f761a5661b3_358a8e8325e69739e563f4d8485017bb91d4f3e3-1264x2240.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\8d1a5165-e4a0-4bd0-be13-9f761a5661b3_358a8e8325e69739e563f4d8485017bb91d4f3e3-1264x2240.png"
+    },
+    {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\8e30612b-983c-43d2-88df-cdd017b80848_02535c3eae70b72b05422c9d26944a9724b1c943-420x420.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\8e30612b-983c-43d2-88df-cdd017b80848_02535c3eae70b72b05422c9d26944a9724b1c943-420x420.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\95147342-12d8-4baa-b35d-61aa30425a34_ea3ee045172012648a4968fe70c42bb61d824ec7-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\95147342-12d8-4baa-b35d-61aa30425a34_ea3ee045172012648a4968fe70c42bb61d824ec7-2048x2048.png"
     },
     {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\95321b23-187d-46e5-adbd-b9c09859d032_02535c3eae70b72b05422c9d26944a9724b1c943-420x420.png",
@@ -8085,6 +8217,14 @@
       "PackagePath": "staticwebassets\\User\\assets\\images\\99306c10-87f4-4e03-bdc9-cdc8a9586ecf_2c3f20fef00a8fe6feac061a87425da91ae00c4d-420x420.png"
     },
     {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\9aea38ea-0163-4b12-9def-c12a8b31dd07_b5dc83f796aec5b4db66c1a0ef299f67efc26777-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\9aea38ea-0163-4b12-9def-c12a8b31dd07_b5dc83f796aec5b4db66c1a0ef299f67efc26777-2048x2048.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\9b7b2fed-1f3d-4155-9e63-e5c23861c3e4_c914aa62a768583cdee9278c3532f00644ba90ce-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\9b7b2fed-1f3d-4155-9e63-e5c23861c3e4_c914aa62a768583cdee9278c3532f00644ba90ce-2048x2048.png"
+    },
+    {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\9d4f47b5-ac8b-43b5-8de7-a1d4bbf65909_Screenshot 2023-05-31 182955 - Copy.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\9d4f47b5-ac8b-43b5-8de7-a1d4bbf65909_Screenshot 2023-05-31 182955 - Copy.png"
     },
@@ -8097,8 +8237,20 @@
       "PackagePath": "staticwebassets\\User\\assets\\images\\a46fb82d-b7da-4735-a6b8-e521bb676cce_702bfc3408b0a51f343f6d00ac514c2fa9022fad-420x420.png"
     },
     {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\a75170ac-1f2d-4b7f-85da-3592c8872ef0_e1ca600145d2ee19b37e3eb85d03be1cedddb56d-2048x2048 (1).png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\a75170ac-1f2d-4b7f-85da-3592c8872ef0_e1ca600145d2ee19b37e3eb85d03be1cedddb56d-2048x2048 (1).png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\aa34c88b-1dad-4959-bc27-e8a0237d7317_e0d6b77ed3be027180e3bd69ec1d643a5e01e11e-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\aa34c88b-1dad-4959-bc27-e8a0237d7317_e0d6b77ed3be027180e3bd69ec1d643a5e01e11e-2048x2048.png"
+    },
+    {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\abaa5266-2278-43fa-b25f-7668ee364103_Screenshot 2023-05-31 182955 - Copy.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\abaa5266-2278-43fa-b25f-7668ee364103_Screenshot 2023-05-31 182955 - Copy.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\ac65c2d7-9b42-4365-9f60-4c227b4237c7_d1c821b79a5c2398815a43d54a106e86bd01a071-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\ac65c2d7-9b42-4365-9f60-4c227b4237c7_d1c821b79a5c2398815a43d54a106e86bd01a071-2048x2048.png"
     },
     {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\acf123d0-33c2-47b1-b6aa-0b44aaef4995_2c3f20fef00a8fe6feac061a87425da91ae00c4d-420x420.png",
@@ -8107,6 +8259,30 @@
     {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\ae1e3c3d-7011-490b-95d6-61f7aeac97ee_Screenshot 2023-05-31 182955 - Copy.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\ae1e3c3d-7011-490b-95d6-61f7aeac97ee_Screenshot 2023-05-31 182955 - Copy.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\b0fae16a-a3c2-473a-af76-ecbbd1af5574_4b366fdaaaad887c51453a541437c257ab605abb-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\b0fae16a-a3c2-473a-af76-ecbbd1af5574_4b366fdaaaad887c51453a541437c257ab605abb-2048x2048.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\b103a76b-7d9d-4023-a7f4-d5c37eafc21b_36c283dec1f3fa499269cf7dc259f57fd2e0b0f5-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\b103a76b-7d9d-4023-a7f4-d5c37eafc21b_36c283dec1f3fa499269cf7dc259f57fd2e0b0f5-2048x2048.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\b2ab5494-6a20-456b-a2f2-effaba045acb_ea3ee045172012648a4968fe70c42bb61d824ec7-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\b2ab5494-6a20-456b-a2f2-effaba045acb_ea3ee045172012648a4968fe70c42bb61d824ec7-2048x2048.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\b2d7a03e-dd00-426d-8706-6908f0862ab5_ea3ee045172012648a4968fe70c42bb61d824ec7-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\b2d7a03e-dd00-426d-8706-6908f0862ab5_ea3ee045172012648a4968fe70c42bb61d824ec7-2048x2048.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\b48c5a53-de3b-4ce8-9705-ff57be6d3205_Spreakersnavigationcard.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\b48c5a53-de3b-4ce8-9705-ff57be6d3205_Spreakersnavigationcard.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\b6e65c65-8855-4b92-8468-0bd929788221_4b366fdaaaad887c51453a541437c257ab605abb-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\b6e65c65-8855-4b92-8468-0bd929788221_4b366fdaaaad887c51453a541437c257ab605abb-2048x2048.png"
     },
     {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\b74ffc85-c57c-4c41-8043-985b221cdff1_ForRockStar.png",
@@ -8121,6 +8297,10 @@
       "PackagePath": "staticwebassets\\User\\assets\\images\\bc32911b-71ab-4330-9f43-07766ed16569_Screenshot 2023-05-31 182955 - Copy.png"
     },
     {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\bef9da47-9d09-4384-a4e0-6d4c620f24c4_d1c821b79a5c2398815a43d54a106e86bd01a071-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\bef9da47-9d09-4384-a4e0-6d4c620f24c4_d1c821b79a5c2398815a43d54a106e86bd01a071-2048x2048.png"
+    },
+    {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\bfb84714-1184-4eab-9aa6-ca00c4ecd4ac_Screenshot 2023-03-23 031359.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\bfb84714-1184-4eab-9aa6-ca00c4ecd4ac_Screenshot 2023-03-23 031359.png"
     },
@@ -8129,12 +8309,20 @@
       "PackagePath": "staticwebassets\\User\\assets\\images\\c3980536-89b3-4b26-b874-50daeae273ed_cd3b4c177a4cfbc4513308c8d3fac6d8dfa73484-420x420.png"
     },
     {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\c422ff70-4338-4788-b631-a27ecfe297eb_b5dc83f796aec5b4db66c1a0ef299f67efc26777-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\c422ff70-4338-4788-b631-a27ecfe297eb_b5dc83f796aec5b4db66c1a0ef299f67efc26777-2048x2048.png"
+    },
+    {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\c42dc451-4039-4128-9d86-7f8739aa8802_d6d1bd2e047bda4745dcea7ce095d4e25448780f-420x420.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\c42dc451-4039-4128-9d86-7f8739aa8802_d6d1bd2e047bda4745dcea7ce095d4e25448780f-420x420.png"
     },
     {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\c4b93739-b474-4c30-b11c-7f967dd234dc_Screenshot 2023-07-06 021201.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\c4b93739-b474-4c30-b11c-7f967dd234dc_Screenshot 2023-07-06 021201.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\c738b455-e44b-44f0-8d7f-9703eabd85e9_e0d6b77ed3be027180e3bd69ec1d643a5e01e11e-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\c738b455-e44b-44f0-8d7f-9703eabd85e9_e0d6b77ed3be027180e3bd69ec1d643a5e01e11e-2048x2048.png"
     },
     {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\c8388613-37af-4157-9052-8ce7c4d2d22e_Screenshot 2023-05-31 182955.png",
@@ -8177,10 +8365,6 @@
       "PackagePath": "staticwebassets\\User\\assets\\images\\d59e1fa7-e4ea-4177-b161-e8fe575cc516_777449f34f522b8ee07c639e8740feb8f86e4aad-420x420.png"
     },
     {
-      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\dd0a0bdb-4240-47ba-8f0b-c6ec1c5803e8_39d07aa828de2ee615049c2887ebe11023d669b4-210x210.png",
-      "PackagePath": "staticwebassets\\User\\assets\\images\\dd0a0bdb-4240-47ba-8f0b-c6ec1c5803e8_39d07aa828de2ee615049c2887ebe11023d669b4-210x210.png"
-    },
-    {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\dd80fbfe-ac72-4f81-8e99-c6d45813ffa7_Screenshot 2023-05-31 182955.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\dd80fbfe-ac72-4f81-8e99-c6d45813ffa7_Screenshot 2023-05-31 182955.png"
     },
@@ -8191,6 +8375,18 @@
     {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\e12c43b5-f831-417f-98ef-60367362dab0_Screenshot 2023-05-16 021100.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\e12c43b5-f831-417f-98ef-60367362dab0_Screenshot 2023-05-16 021100.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\e258f54f-4b5e-40c2-8f69-6d8fab886c58_65c83ccc8bea54ca6dc5af64f77d3ebea5719598-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\e258f54f-4b5e-40c2-8f69-6d8fab886c58_65c83ccc8bea54ca6dc5af64f77d3ebea5719598-2048x2048.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\e54df06c-9c4e-4d8e-96b4-863acb48dc76_6ddb170adbc06e617cf55e3059461e07a4beada0-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\e54df06c-9c4e-4d8e-96b4-863acb48dc76_6ddb170adbc06e617cf55e3059461e07a4beada0-2048x2048.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\e55d9646-c069-4d11-83b2-3b365cb9cf66_ea3ee045172012648a4968fe70c42bb61d824ec7-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\e55d9646-c069-4d11-83b2-3b365cb9cf66_ea3ee045172012648a4968fe70c42bb61d824ec7-2048x2048.png"
     },
     {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\e80aa0a8-a321-4ec1-915b-ef539582c1ee_a8da850c9681abb163ea89bafd6dd07e017aeb1c-420x420.png",
@@ -8221,12 +8417,16 @@
       "PackagePath": "staticwebassets\\User\\assets\\images\\ee2bda80-cb28-416d-8e6b-378480a2c9dd_f1bde89fc16fa4050f34079edcd6ff58449e7ce2-210x210.png"
     },
     {
-      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\f198cc2b-b2c5-4de9-8cb9-3dcf77d4e3d5_5017da16dc77d645b54d6945f064383153634f66-420x420.png",
-      "PackagePath": "staticwebassets\\User\\assets\\images\\f198cc2b-b2c5-4de9-8cb9-3dcf77d4e3d5_5017da16dc77d645b54d6945f064383153634f66-420x420.png"
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\f274a907-7531-40c1-83f2-730cf58f47f4_a9b06c4ae7d4dccd51c976c850824927ce1e88cd-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\f274a907-7531-40c1-83f2-730cf58f47f4_a9b06c4ae7d4dccd51c976c850824927ce1e88cd-2048x2048.png"
     },
     {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\f4657eb4-584b-4fbf-af03-d3897504bb38_Screenshot 2023-03-23 031359.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\f4657eb4-584b-4fbf-af03-d3897504bb38_Screenshot 2023-03-23 031359.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\f53b8aa4-ff22-4427-b907-4a19f445d4f7_b5dc83f796aec5b4db66c1a0ef299f67efc26777-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\f53b8aa4-ff22-4427-b907-4a19f445d4f7_b5dc83f796aec5b4db66c1a0ef299f67efc26777-2048x2048.png"
     },
     {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\f58b3699-7b70-4d64-8f02-98bea28c57ec_2c3f20fef00a8fe6feac061a87425da91ae00c4d-420x420.png",
@@ -8245,8 +8445,20 @@
       "PackagePath": "staticwebassets\\User\\assets\\images\\fd2ad96d-2ac4-448e-9bbd-4d68e6c106e1_777449f34f522b8ee07c639e8740feb8f86e4aad-420x420.png"
     },
     {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\fded6a3a-5ccd-4da2-92b3-43ef8a55567c_bd6c03240f48f2efba529c3bf785e4ba027a9287-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\fded6a3a-5ccd-4da2-92b3-43ef8a55567c_bd6c03240f48f2efba529c3bf785e4ba027a9287-2048x2048.png"
+    },
+    {
       "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\fe323894-32e5-46e1-8dce-6fb135e8605f_Screenshot 2023-05-31 182955 - Copy.png",
       "PackagePath": "staticwebassets\\User\\assets\\images\\fe323894-32e5-46e1-8dce-6fb135e8605f_Screenshot 2023-05-31 182955 - Copy.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\images\\fe36da7c-337e-4dd3-ada0-f5a24fbb35c8_ea3ee045172012648a4968fe70c42bb61d824ec7-2048x2048.png",
+      "PackagePath": "staticwebassets\\User\\assets\\images\\fe36da7c-337e-4dd3-ada0-f5a24fbb35c8_ea3ee045172012648a4968fe70c42bb61d824ec7-2048x2048.png"
+    },
+    {
+      "Id": "C:\\Users\\asus\\Desktop\\Polaroid\\Presentation\\wwwroot\\User\\assets\\style\\style.css",
+      "PackagePath": "staticwebassets\\User\\assets\\style\\style.css"
     },
     {
       "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.Presentation.Microsoft.AspNetCore.StaticWebAssets.props",

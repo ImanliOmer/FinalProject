@@ -1,0 +1,101 @@
+﻿@using Business.ViewModels.User.Product
+@model Business.ViewModels.User.Product.ProductIndexVM
+
+<div class="sm:container lg:container mx-auto mt-[106px] xl:mt-0 px-3">
+    <section>
+       
+            @foreach (var main in Model.Products)
+            {
+                <div class="mid:grid lg:grid lg:grid-cols-2 mid:grid-cols-2 gap-20 mt-10">
+
+                    <div>
+                        <div id="container" class="overflow-hidden relative border border-border rounded-xl">
+
+
+                            <img src="~/User/assets/images/@main.MainPhoto" id="hover-img"
+                                 class=" object-cover origin-center w-full" alt="Image Alt" />
+                        </div>
+
+
+
+                    </div>
+
+
+                    <div class="">
+                        <h1 class="sm:text-[40px] text-[25px] font-semibold leading-tight mt-5 mid:mt-0">
+                            Technaxx car Alarm with Charging Function
+                        </h1>
+
+                        <div class="flex flex-col sm:flex-row items-start sm:items-center mt-5">
+                            <div class="flex ">
+                                <div class="star-rating text-[15px] text-[#e1e1e] border-r border-border pr-3">
+                                    <span class="fa fa-star star-icon text-black"></span>
+                                    <span class="fa fa-star star-icon text-black"></span>
+                                    <span class="fa fa-star star-icon text-black"></span>
+                                    <span class="fa fa-star star-icon text-black"></span>
+                                    <span class="fa fa-star star-icon text-black"></span>
+
+                                    <span class="review text-[13px] font-semibold ml-[10px] text-black">(1)</span>
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="price flex items-end">
+                            <span class="new-price text-red text-[30px] font-medium mt-[5px]">$@main.Cost</span>
+                        </div>
+
+
+                        <div class="lg:flex max-w-full justify-center items-center mt-5 border-t border-border pt-5 hidden">
+
+
+                            <button id="addToCart" data-id="@main.Id" class="flex w-full hover:bg-gray-600 justify-center items-center bg-black px-7 py-3 rounded-xl text-white gap-3 font-semibold">
+
+                                Add to Cart
+                            </button>
+                        </div>
+
+
+
+                        <div class="border-b border-border pb-7">
+                            <div class="flex flex-col sm:flex-row">
+                            </div>
+                        </div>
+
+
+
+                        <div class="border-black border-2 w-[700px]">
+                            <div class="pb-5 flex gap-3 border-b border-border">
+                                <a href="" id="desc" class="text-[19px] font-bold">Description</a>
+                                <a href="" id="review" class="text-[19px] w-100 text-gray font-bold ml-4">Technical Spesifaction</a>
+                            </div>
+
+                            <div class="mt-1">
+                                <div id="desc-part" class="desc-part ">
+                                    <p>
+                                        @main.Description
+                                    </p>
+
+                                </div>
+
+                                <div id="rewiev-part" class="rewiev-part hidden">
+
+                                    <p class="font-medium">
+                                       @main.TechnicalSpecifications
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            }
+        
+    </section>
+</div>

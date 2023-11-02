@@ -212,8 +212,7 @@ namespace Business.Services.Concret.Admin
             return true;
         }
 
-
-
+       
     }
 
 }

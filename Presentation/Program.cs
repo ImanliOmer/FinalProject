@@ -1,6 +1,7 @@
 using Business.Services.Abstract.Admin;
 using Business.Services.Abstract.User;
 using Business.Services.Concret.Admin;
+using Business.Services.Concret.User;
 using Business.Services.Concret.Users;
 using Business.Utilities.EmailService;
 using Business.Utilities.EmailService.EmailSender.Abstract;
@@ -39,9 +40,9 @@ builder.Services.AddSingleton<IFileService, FileService>();
 builder.Services.AddSingleton<IActionContextAccessor, ActionContextAccessor>();
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
-//var configuration = builder.Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>();
-//builder.Services.AddSingleton(configuration);
-//builder.Services.AddSingleton<IEmailSender, EmailSender>();
+var configuration = builder.Configuration.GetSection("EmailConfiguration").Get<EmailConfiguration>();
+builder.Services.AddSingleton(configuration);
+builder.Services.AddSingleton<IEmailSender, EmailSender>();
 
 builder.Services.ConfigureApplicationCookie(options =>
 {
@@ -68,6 +69,13 @@ builder.Services.AddScoped<IProductCategoryService, ProductCategoryService>();
 builder.Services.AddScoped<ISliderService, SliderService>();
 builder.Services.AddScoped<ILayoutService, LayoutService>();
 builder.Services.AddScoped<IShopService, ShopService>();
+builder.Services.AddScoped<IAccountService, AccountService>();
+builder.Services.AddScoped<INavigationCardService, NavigationCardService>();
+builder.Services.AddScoped<IUserAccountService, UserAccountService>();
+builder.Services.AddScoped<IWishlistService, WishlistService>();
+
+builder.Services.AddScoped<IBasketService, BasketService>();
+
 
 //service end
 
@@ -78,12 +86,25 @@ builder.Services.AddScoped<IProductCategoryRepository, ProductCategoryRepository
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<ISliderRepository, SliderRepository>();
 builder.Services.AddScoped<IProductPhotoRepository, ProductPhotoRepository>();
-
+builder.Services.AddScoped<INavigationCardRepository, NavigationCardRepository>();    
+builder.Services.AddScoped<IBasketProductRepository, BasketProductRepository>();
+builder.Services.AddScoped<IBasketRepository, BasketRepository>();
+builder.Services.AddScoped<IWishlistProductRepository, WishlistProductRepository>();
+builder.Services.AddScoped<IWishlistRepository, WishlistRepository>();
 //repository end
 
 
 
 var app = builder.Build();
+
+using (var scope = app.Services.CreateScope())
+{
+    var unitOfWork = scope.ServiceProvider.GetService<IUnitOfWork>();
+    var roleManager = scope.ServiceProvider.GetService<RoleManager<IdentityRole>>();
+    var userManager = scope.ServiceProvider.GetService<UserManager<IdentityUser>>();
+    await DbInitializer.SeedAsync(roleManager, userManager);
+}
+
 app.MapControllerRoute(
 		  name: "areas",
 		  pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"

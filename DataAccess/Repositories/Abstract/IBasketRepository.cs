@@ -1,6 +1,7 @@
 ﻿using Common.Constants;
 using Common.Entities;
 using DataAccess.Repositories.Base;
+using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,8 +12,8 @@ namespace DataAccess.Repositories.Abstract
 {
     public interface IBasketRepository : IRepository<Basket>
     {
-        Task<Basket> GetBasketWithProductsAsync(User user);
-        Task<Basket> GetBasketById(User user);
-        Task<BasketProduct>? GetProductByBasketProductIdAsync(int id, User user);
+        Task<Basket> GetBasketWithProductsAsync(IdentityUser user);
+        Task<Basket> GetBasketById(IdentityUser user);
+        Task<BasketProduct>? GetProductByBasketProductIdAsync(int id, IdentityUser user);
     }
 }

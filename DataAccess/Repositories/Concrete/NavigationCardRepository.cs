@@ -2,6 +2,7 @@
 using DataAccess.Contexts;
 using DataAccess.Repositories.Abstract;
 using DataAccess.Repositories.Base;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,5 +19,10 @@ namespace DataAccess.Repositories.Concrete
         {
             _context = context;
         }
-    }
+
+		public async Task<NavigationCard> GetByNameAsync(string name)
+		{
+			return await _context.NavigationCards.Where(p => !p.IsDeleted).FirstOrDefaultAsync(p => p.Title.ToLower().Trim() == name.ToLower().Trim());
+		}
+	}
 }

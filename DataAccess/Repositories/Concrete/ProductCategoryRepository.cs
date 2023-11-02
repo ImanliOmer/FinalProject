@@ -47,7 +47,9 @@ namespace DataAccess.Repositories.Concrete
             return await _context.ProductCategories.Where(p => !p.IsDeleted).FirstOrDefaultAsync(p => p.CategoryName.ToLower().Trim() == name.ToLower().Trim());
         }
 
-		public async Task<List<ProductCategory>> GetProductsWithPhotos()
+       
+
+        public async Task<List<ProductCategory>> GetProductsWithPhotos()
 		{
 			return await _context.ProductCategories.Where(x => !x.IsDeleted).ToListAsync();
 		}

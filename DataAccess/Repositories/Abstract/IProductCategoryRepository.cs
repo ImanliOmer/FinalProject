@@ -13,7 +13,7 @@ namespace DataAccess.Repositories.Abstract
 		Task<ProductCategory> GetById(int id);
 		Task<List<ProductCategory>> GetAll();
         Task<ProductCategory> GetByNameAsync(string name);
-		Task<List<ProductCategory>> GetProductsWithPhotos();
+        Task<List<ProductCategory>> GetProductsWithPhotos();
 		Task<List<ProductCategory>> GetAllWithChildren();
 		Task<ProductCategory> GetById_IncludeChildren(int id);
     }

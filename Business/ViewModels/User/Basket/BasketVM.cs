@@ -12,7 +12,6 @@ namespace Business.ViewModels.User.Basket
         public int Count { get; set; }
         public string Title { get; set; }
         public decimal Price { get; set; }
-        public int StockQuantity { get; set; }
         public string PhotoName { get; set; }
     }
 }

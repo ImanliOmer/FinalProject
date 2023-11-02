@@ -2,6 +2,7 @@
 using DataAccess.Contexts;
 using DataAccess.Repositories.Abstract;
 using DataAccess.Repositories.Base;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -25,20 +26,20 @@ namespace DataAccess.Repositories.Concrete
             return wishlistProduct;
         }
 
-        public Task<WishlistProduct>? GetProductByWishlistProductIdAsync(int id, User user)
+        public Task<WishlistProduct>? GetProductByWishlistProductIdAsync(int id, IdentityUser user)
         {
             var wishlistproduct = _context.WishlistProducts.Where(wp => !wp.IsDeleted).FirstOrDefaultAsync(wp => wp.ProductId == id && wp.Wishlist.UserId == user.Id);
             return wishlistproduct;
         }
 
-        public async Task<List<WishlistProduct>> GetWishlistProductsByUser(User user)
+        public async Task<List<WishlistProduct>> GetWishlistProductsByUser(IdentityUser user)
         {
             var wishlistproducts = await _context.WishlistProducts.Where(wp => !wp.IsDeleted && wp.Wishlist.UserId == user.Id).ToListAsync();
 
             return wishlistproducts;
         }
 
-        public async Task<bool> IsInWishlistAsync(int id, User user)
+        public async Task<bool> IsInWishlistAsync(int id, IdentityUser user)
         {
             var wishlistproduct = await _context.WishlistProducts.Where(wp => wp.IsInWishlist).FirstOrDefaultAsync(wp => wp.ProductId == id && wp.Wishlist.UserId == user.Id);
             if (wishlistproduct is not null)
